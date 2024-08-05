@@ -17,10 +17,10 @@ console.log(str[-1]);
 // Do you think JSON.stringify would work for arrays as well? What about nested objects? What happens if we pass numbers, strings, undefined, null to JSON.stringify?
 
 
-let arr = [1, 2, 3];
+const arr = [1, 2, 3];
 console.log(JSON.stringify(arr));
 
-let obj = { a: 1, b: { c: 2 } };
+const obj = { a: 1, b: { c: 2 } };
 console.log(JSON.stringify(obj));
 
 console.log(JSON.stringify(123));
