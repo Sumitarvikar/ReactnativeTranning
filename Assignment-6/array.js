@@ -32,7 +32,7 @@ console.log(getById(5));
 // 
 
 
-let arr = [1, 2, 3, 4];
+const arr = [1, 2, 3, 4];
 
 console.log('Original array:', arr);
 
@@ -44,11 +44,11 @@ console.log('After pop:', arr);
 arr.sort((a, b) => b - a);
 console.log('After sort:', arr); 
 
-let filteredArr = arr.filter(num => num > 2);
+const filteredArr = arr.filter(num => num > 2);
 console.log('Filtered array:', filteredArr); 
 
-let found = arr.find(num => num > 2);
+const found = arr.find(num => num > 2);
 console.log('Found element:', found); 
 
-let mappedArr = arr.map(num => num * 2);
+const mappedArr = arr.map(num => num * 2);
 console.log('Mapped array:', mappedArr); 
