@@ -11,10 +11,11 @@ function groupByKey(arr, key) {
     const groupArray = {};
     for (const obj of arr) {
         const groupKey = obj[key];
-        // if (groupArray[groupKey] === undefined) {
-        //     groupArray[groupKey] = [];            //Explore
-        // } 
-          groupArray[groupKey].push(obj);
+        if (groupArray[groupKey] === undefined) {
+            groupArray[groupKey] = [obj];
+        } else {
+            groupArray[groupKey].push(obj);
+        }
     }
     return groupArray;
 }

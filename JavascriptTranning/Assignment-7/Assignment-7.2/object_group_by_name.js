@@ -7,16 +7,10 @@ const users = [
 
 function mapBy(arr, key) {
     return arr.reduce((acc, obj) => {
-        if (obj[key] !== undefined) {
-            acc[obj[key]] = obj;
-            return acc;
-        }else{
-              return new Error("Please provide right key ")
-        }
-        
+        acc[obj[key]] = obj;
+        return acc;
     }, {});
 }
-
 
 
 function mapByName(arr, key) {
@@ -27,14 +21,6 @@ function mapByName(arr, key) {
     return acc
 }
 
-//console.log(mapByName(users, "a"));
+console.log(mapByName(users, "first_name"));
 console.log("********************");
-//console.log(mapBy(users, "a"));
-
-try {
-    console.log(mapBy(users, "a"));
-
-}catch(e){
-    console.log(e);
-}
-console.log("********************");
+console.log(mapBy(users, "first_name"));

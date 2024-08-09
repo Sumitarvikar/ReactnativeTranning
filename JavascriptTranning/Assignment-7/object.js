@@ -17,18 +17,8 @@ updatedObject2.address.details[0] = "5"
       details: ["5", ...originalObject.address.details.slice(1)]
     })
   });
-
-  const updatedObjec3 = {
-    ...originalObject,
-    address: {
-      ...originalObject.address,
-      details: ["5", ...originalObject.address.details.slice(1)]
-    }
-  };
-  
   
   console.log(updatedObject);
   console.log("********************"); 
   console.log(updatedObject2);
-  console.log(originalObject);
   
