@@ -86,6 +86,11 @@ function App() {
         {formError.password && (
           <p className="error-text">{formError.password}</p>
         )}
+         {/* <select id="gender" name="gender" className="stacked">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select> */}
         <button type="button" onClick={handleOnSubmit}>
           Submit
         </button>
