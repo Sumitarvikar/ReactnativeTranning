@@ -1,0 +1,55 @@
+/* Ensure the body covers the full viewport and apply the gradient background */
+html, body {
+    height: 100%; 
+    margin: 0; 
+    background: linear-gradient(to right, red, yellow); 
+  }
+  
+  /* Full-screen container to center the App div */
+  .fullscreen-container {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Styles for the App component */
+  .App {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px;
+    width: 300px; /* Space between items */
+    max-width: 400px; /* Max width of the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: white; /* Background color for the form */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+  }
+  
+  /* Styles for input elements */
+  input {
+    width: 100%; /* Full width of the container */
+    padding: 8px; /* Padding inside the input fields */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Styles for button */
+  button {
+    padding: 10px; /* Padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Optional: Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  .error-text {
+    color: red;
+    font-size: 0.75rem; /* Adjust the font size as needed */
+    margin: 0; /* Remove default margin if needed */
+  }
+  
